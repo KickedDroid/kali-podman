@@ -31,7 +31,7 @@ Now you can enter your container with:
 kali
 ```
 
-[](https://github.com/KickedDroid/kali-podman/blob/master/kali-podman.png?raw=true)
+![](https://raw.githubusercontent.com/KickedDroid/kali-podman/refs/heads/master/kali-podman.png)
 
 ---
 
