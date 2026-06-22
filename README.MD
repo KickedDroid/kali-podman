@@ -9,7 +9,7 @@ Ensure Podman is installed on your host system
 If you are setting this up for the first time or rebuilding after a clean wipe, follow these three steps:
 
 ```
-git clone &&
+git clone https://github.com/KickedDroid/kali-podman.git &&
 cd kali-podman &&  
 podman build -t kali:custom . &&
 podman run --name kali-box kali:custom /bin/bash
