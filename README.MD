@@ -18,8 +18,8 @@ podman run --name kali-box kali:custom /bin/bash
 Create alias
 
 ```bash
-echo "alias kali='podman start -a kali-box'" >> ~/.bashrc
-source ~/.bashrc
+echo "alias kali='podman start -a kali-box'" >> ~/.zshrc
+source ~/.zshrc
 ```
 
 Now you can enter your container with:
