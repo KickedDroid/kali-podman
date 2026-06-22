@@ -1,10 +1,6 @@
-A lightweight, persistent Kali Linux environment containerized via Podman. This setup replaces a traditional virtual machine, offering rapid startup and isolated storage without mounting to the host filesystem.
-
-Ensure Podman is installed on your host system
-
----
-
 ## Quick Start
+
+Ensure Podman is installed on your host system!!
 
 If you are setting this up for the first time or rebuilding after a clean wipe, follow these steps. This can take awhile go get some coffee ;)
   
