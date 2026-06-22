@@ -12,13 +12,16 @@ If you are setting this up for the first time or rebuilding after a clean wipe, 
 git clone https://github.com/KickedDroid/kali-podman.git &&
 cd kali-podman &&  
 podman build -t kali:custom . &&
-podman run --name kali-box kali:custom /bin/bash
+podman run -it -d --name kali-box kali:custom /bin/bash
 ```
 
-Create alias
+Create aliases
 
 ```bash
 echo "alias kali='podman start -a kali-box'" >> ~/.zshrc
+echo "alias kali-start='podman run -d -it --name kali-box kali:custom /bin/bash'" >> ~/.zshrc
+echo "alias kali-rm='podman rm -f kali-box'" >> ~/.zshrc
+echo "alias kali-rmi='podman rmi kali:custom'" >> ~/.zshrc
 source ~/.zshrc
 ```
 
@@ -29,6 +32,8 @@ kali
 ```
 
 ---
+
+# Customize
 
 ## From  Dockerfile
 
@@ -49,29 +54,18 @@ WORKDIR /root
 CMD ["/bin/bash"]
 ```
 
+Build the image from the `Dockerfile`
+
 ```
 podman build -t kali:custom .
 ```
 
-```
-podman run -it --name kali-box kali:custom /bin/bash
-```
-
-
-## Enter
-
-Create alias
-
-```bash
-echo "alias kali='podman start -a kali-box'" >> ~/.bashrc
-source ~/.bashrc
-```
-
-Now you can enter your container with:
+Create and run the container
 
 ```
-kali
+podman run -it -d --name kali-box kali:custom /bin/bash
 ```
+
 
 ### From DockerHub
 
