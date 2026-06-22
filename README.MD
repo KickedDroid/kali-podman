@@ -71,7 +71,7 @@ podman run -it -d --name kali-box kali:custom /bin/bash
 podman run -it --name kali-box docker.io/kalilinux/kali-rolling
 ```
 
-Once inside update the packages
+Once inside install the kali packages
 
 ```
 apt update && apt -y install kali-linux-headless
