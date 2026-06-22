@@ -6,8 +6,7 @@ Ensure Podman is installed on your host system
 
 ## Quick Start
 
-If you are setting this up for the first time or rebuilding after a clean wipe, follow these three steps:
-  Note: This can take awhile go get some coffee ;)
+If you are setting this up for the first time or rebuilding after a clean wipe, follow these steps. This can take awhile go get some coffee ;)
   
 ```
 git clone https://github.com/KickedDroid/kali-podman.git &&
