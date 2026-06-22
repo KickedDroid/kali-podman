@@ -31,6 +31,8 @@ Now you can enter your container with:
 kali
 ```
 
+[](https://github.com/KickedDroid/kali-podman/blob/master/kali-podman.png?raw=true)
+
 ---
 
 # Customize
